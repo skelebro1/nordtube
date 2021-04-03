@@ -419,5 +419,8 @@ yt-icon-button.yt-live-chat-item-list-renderer {
 
 #items.yt-live-chat-ticker-renderer {
     background: #2e3340
+}
+    paper-button.yt-next-continuation {
+    color: #81a1c1
     }
 }
