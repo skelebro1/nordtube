@@ -381,3 +381,24 @@ yt-icon.ytd-backstage-poll-renderer, #vote-info.ytd-backstage-poll-renderer {
 ytd-backstage-poll-renderer[show-poll-choice-border] .choice-info.ytd-backstage-poll-renderer {
     border: none;
 }
+
+ytd-clarification-renderer[background-style="info"] {
+    display: none;
+}
+
+ytd-video-primary-info-renderer {
+    border: none;
+}
+
+yt-live-chat-header-renderer {
+    background-color: #2e3340;
+}
+
+yt-live-chat-banner-manager.yt-live-chat-item-list-renderer {
+     display: none; 
+}
+
+#menu.yt-live-chat-text-message-renderer {
+    background: #2e3340;
+    color: #d8dee9;
+}
