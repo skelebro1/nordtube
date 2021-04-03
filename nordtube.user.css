@@ -399,10 +399,10 @@ yt-live-chat-header-renderer {
 
 yt-live-chat-banner-manager.yt-live-chat-item-list-renderer {
      display: none; 
-    }
 }
 
 #menu.yt-live-chat-text-message-renderer {
     background: #2e3340;
     color: #d8dee9;
+    }
 }
