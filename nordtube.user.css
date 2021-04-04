@@ -422,5 +422,9 @@ yt-icon-button.yt-live-chat-item-list-renderer {
 }
     paper-button.yt-next-continuation {
     color: #81a1c1
+}
+    
+    #progress.ytd-thumbnail-overlay-resume-playback-renderer {
+    background-color: #5e81ac
     }
 }
