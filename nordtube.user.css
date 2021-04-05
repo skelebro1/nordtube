@@ -427,4 +427,8 @@ yt-icon-button.yt-live-chat-item-list-renderer {
     #progress.ytd-thumbnail-overlay-resume-playback-renderer {
     background-color: #5e81ac
     }
+    
+    .super-title-icon.ytd-video-primary-info-renderer {
+    color: #5e81ac
+    }
 }
