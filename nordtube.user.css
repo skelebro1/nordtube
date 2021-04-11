@@ -431,4 +431,11 @@ yt-icon-button.yt-live-chat-item-list-renderer {
     .super-title-icon.ytd-video-primary-info-renderer {
     color: #5e81ac
     }
+    ytd-mini-guide-entry-renderer {
+    background: #2e3340
+}
+    
+.guide-icon.ytd-mini-guide-entry-renderer, .title.ytd-mini-guide-entry-renderer {
+    color: #d8dee9
+    }
 }
