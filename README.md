@@ -9,11 +9,11 @@
 > is a youtube theme based on the nord color scheme
 
 
-## 💻 installation
+## 💻 Installation
 
 The only thing you need to have installed is the [stylus](https://github.com/openstyles/stylus) browser extension
 
-[click here to install nordtube](https://github.com/sheeepdev/nordtube/raw/main/nordtube.user.css)
+[Click here to install nordtube](https://github.com/sheeepdev/nordtube/raw/main/nordtube.user.css)
 
 
 ## 👤 Author
@@ -32,7 +32,7 @@ Contributions, issues and feature requests are welcome!<br />Feel free to check 
 
 Give a ⭐️ if this project helped you!
 
-## 📝 note
+## 📝 Note
 
 This is my **Personal** theme, there may be some things that you wont like. You'll need to change that by yourself.
 
