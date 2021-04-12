@@ -442,4 +442,13 @@ yt-icon-button.yt-live-chat-item-list-renderer {
     border: none;
     box-shadow: none;
     }
+    yt-live-chat-text-message-renderer[author-is-owner] {
+    background: #2e3340
+}
+
+yt-live-chat-author-chip[is-highlighted] #author-name.owner.yt-live-chat-author-chip, #author-name.owner.yt-live-chat-author-chip {
+    background-color: #5e81ac;
+    color: #d8dee9;
+    border-radius: 15px;
+    }
 }
