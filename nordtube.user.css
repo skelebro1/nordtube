@@ -438,4 +438,8 @@ yt-icon-button.yt-live-chat-item-list-renderer {
 .guide-icon.ytd-mini-guide-entry-renderer, .title.ytd-mini-guide-entry-renderer {
     color: #d8dee9
     }
+    ytd-searchbox[has-focus] #container.ytd-searchbox {
+    border: none;
+    box-shadow: none;
+    }
 }
