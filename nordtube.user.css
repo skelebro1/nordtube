@@ -25,13 +25,13 @@ ytd-watch-flexy[flexy][is-two-columns_] #columns.ytd-watch-flexy {
     color: #5e81ac
 }
 
-paper-button.ytd-subscribe-button-renderer[subscribed] {
+tp-yt-paper-button.ytd-subscribe-button-renderer[subscribed] {
     color: #d8dee9;
     background-color: #4c566a;
     border-radius: 20px;
 }
 
-paper-button.ytd-subscribe-button-renderer {
+tp-yt-paper-button.ytd-subscribe-button-renderer {
     background-color: #5e81ac;
     color: #d8dee9;
     border-radius: 20px;
@@ -450,5 +450,8 @@ yt-live-chat-author-chip[is-highlighted] #author-name.owner.yt-live-chat-author-
     background-color: #5e81ac;
     color: #d8dee9;
     border-radius: 15px;
+    }
+    ytd-button-renderer.style-suggestive[is-paper-button] tp-yt-paper-button.ytd-button-renderer {
+    border: none;
     }
 }
