@@ -11,7 +11,7 @@
 
 ## 💻 Installation
 
-The only thing you need to have installed is the [stylus](https://github.com/openstyles/stylus) browser extension
+The only thing you need to have installed before trying to install nordtube is the [stylus](https://github.com/openstyles/stylus) browser extension
 
 [Click here to install nordtube](https://github.com/sheeepdev/nordtube/raw/main/nordtube.user.css)
 
