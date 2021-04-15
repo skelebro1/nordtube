@@ -6,7 +6,7 @@
   </a>
 </p>
 
-> is a youtube theme based on the nord color scheme
+  <img src="https://socialify.git.ci/sheeepdev/nordtube/image?description=1&descriptionEditable=is%20a%20youtube%20theme%20based%20on%20the%20nord%20color%20scheme%20%F0%9F%8E%A8&font=Raleway&language=1&logo=https%3A%2F%2Fexternal-content.duckduckgo.com%2Fiu%2F%3Fu%3Dhttp%253A%252F%252Ficons.iconarchive.com%252Ficons%252Fdakirby309%252Fsimply-styled%252F128%252FYouTube-icon.png%26f%3D1%26nofb%3D1&theme=Dark" />
 
 
 ## 💻 Installation
