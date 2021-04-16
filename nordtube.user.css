@@ -454,4 +454,40 @@ yt-live-chat-author-chip[is-highlighted] #author-name.owner.yt-live-chat-author-
     ytd-button-renderer.style-suggestive[is-paper-button] tp-yt-paper-button.ytd-button-renderer {
     border: none;
     }
+    #header-section.ytd-donation-shelf-renderer, #donate-section.ytd-donation-shelf-renderer, #creator-messages-section.ytd-donation-shelf-renderer, #nonprofit-section.ytd-donation-shelf-renderer, #collapse-controls-section.ytd-donation-shelf-renderer {
+    background-color: #2e3340
+}
+
+#collapse-controls-section.ytd-donation-shelf-renderer, #creator-messages-section.ytd-donation-shelf-renderer, #nonprofit-section.ytd-donation-shelf-renderer, ytd-donation-shelf-renderer  {
+    border: none !important;
+}
+
+#header-section.ytd-donation-shelf-renderer {
+    border-bottom: none !Important;
+}
+
+#progress-bar-fill.ytd-donation-shelf-renderer {
+    background-color: #81a1c1
+}
+
+#progress-bar.ytd-donation-shelf-renderer {
+    background-color: #3b4252
+}
+
+.creator-message.ytd-donation-shelf-renderer, #campaign-subtitle.ytd-donation-shelf-renderer, #nonprofit-description.ytd-donation-shelf-renderer, #nonprofit-subtitle.ytd-donation-shelf-renderer, #collapse-controls-section.ytd-donation-shelf-renderer {
+    color: #d8dee9
+}
+
+#nonprofit-title.ytd-donation-shelf-renderer yt-icon.ytd-donation-shelf-renderer {
+    color: #81a1c1
+}
+
+.badge-style-type-ypc.ytd-badge-supported-renderer {
+    color: #a3be8c
+}
+
+.badge-style-type-ypc.ytd-badge-supported-renderer {
+    background-color: #4c556a;
+    border-radius: 20px;
+    }
 }
