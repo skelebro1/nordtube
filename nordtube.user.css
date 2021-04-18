@@ -496,4 +496,10 @@ yt-live-chat-author-chip[is-highlighted] #author-name.owner.yt-live-chat-author-
     #logo-icon > svg > g > g:nth-child(1) > path{
     fill: #5e81ac;
     }
+    .badge-style-type-live-now.ytd-badge-supported-renderer, .badge-style-type-starting-soon.ytd-badge-supported-renderer {
+    background: #bf616a;
+    color: #d8dee9;
+    border: none;
+    border-radius: 5px;
+    }
 }
