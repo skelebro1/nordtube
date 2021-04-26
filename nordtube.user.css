@@ -502,4 +502,11 @@ yt-live-chat-author-chip[is-highlighted] #author-name.owner.yt-live-chat-author-
     border: none;
     border-radius: 5px;
     }
+    #like-button.ytd-comment-action-buttons-renderer.style-default-active {
+    color: #88c0d0;
+}
+
+#dislike-button.ytd-comment-action-buttons-renderer.style-default-active {
+    color: #88c0d0;
+    }
 }
