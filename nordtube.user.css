@@ -509,4 +509,13 @@ yt-live-chat-author-chip[is-highlighted] #author-name.owner.yt-live-chat-author-
 #dislike-button.ytd-comment-action-buttons-renderer.style-default-active {
     color: #88c0d0;
     }
+    #header.ytd-add-to-playlist-renderer, ytd-add-to-playlist-renderer[dialog] #close-button.ytd-add-to-playlist-renderer, #playlists.ytd-add-to-playlist-renderer, ytd-compact-link-renderer:not([has-secondary]) tp-yt-paper-item.ytd-compact-link-renderer {
+    background-color: #2e3340;
+    color: #d8dee9;
+    border: none;
+}
+
+yt-icon.ytd-playlist-add-to-option-renderer {
+    color: #d8dee9
+    }
 }
