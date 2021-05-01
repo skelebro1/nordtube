@@ -40,4 +40,4 @@ This is my **personal** theme, there may be some things that you wont like. You'
 ## 📩 License
 
 Copyright © 2021 [sheepdev](https://github.com/sheeepdev).<br />
-This project is licensed with the [CC-BY-4.0](https://github.com/sheeepdev/nordtube/blob/main/LICENSE) license.
+This project is licensed under the [CC-BY-4.0](https://github.com/sheeepdev/nordtube/blob/main/LICENSE) license.
