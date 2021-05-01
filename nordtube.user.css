@@ -518,4 +518,32 @@ yt-live-chat-author-chip[is-highlighted] #author-name.owner.yt-live-chat-author-
 yt-icon.ytd-playlist-add-to-option-renderer {
     color: #d8dee9
     }
+    ytd-topbar-menu-button-renderer #button.ytd-topbar-menu-button-renderer {
+    display: none !important;
+}
+
+yt-live-chat-message-input-renderer {
+    background: #2e3340;
+    color: #d8dee9;
+}
+
+#picker-buttons.yt-live-chat-message-input-renderer > .yt-live-chat-message-input-renderer {
+    color: #d8dee9
+}
+
+yt-button-renderer #button.yt-button-renderer {
+    border-radius: 20px;
+}
+
+#label.yt-live-chat-text-input-field-renderer {
+    color: #d8dee9
+}
+
+#unfocused.yt-live-chat-text-input-field-renderer {
+    display: none;
+}
+
+#focused.yt-live-chat-text-input-field-renderer {
+    background-color: #81a1c1
+    }
 }
