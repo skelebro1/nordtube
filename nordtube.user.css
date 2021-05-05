@@ -546,4 +546,7 @@ yt-button-renderer #button.yt-button-renderer {
 #focused.yt-live-chat-text-input-field-renderer {
     background-color: #81a1c1
     }
+    ytd-sentiment-bar-renderer[activated] #like-bar.ytd-sentiment-bar-renderer {
+    background-color: #5e81ac
+    }
 }
