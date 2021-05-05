@@ -549,4 +549,7 @@ yt-button-renderer #button.yt-button-renderer {
     ytd-sentiment-bar-renderer[activated] #like-bar.ytd-sentiment-bar-renderer {
     background-color: #5e81ac
     }
+    .cont-button.ytd-comment-replies-renderer {
+        color: #81a1c1
+    }
 }
