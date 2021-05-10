@@ -552,4 +552,50 @@ yt-button-renderer #button.yt-button-renderer {
     .cont-button.ytd-comment-replies-renderer {
         color: #81a1c1
     }
+    #sections.ytd-multi-page-menu-renderer > .ytd-multi-page-menu-renderer:not(:last-child), ytd-multi-page-menu-renderer[menu-style="multi-page-menu-style-type-notifications"] #sections.ytd-multi-page-menu-renderer > .ytd-multi-page-menu-renderer {
+    background-color: #2e3340;
+    border: none;
+}
+
+.more-button.ytd-comment-renderer, .less-button.ytd-comment-renderer {
+    color: #d8dee9
+}
+
+::placeholder {
+    color: #d4d7db !important;
+    opacity: 1 !important;
+}
+
+#search-icon-legacy.ytd-searchbox yt-icon.ytd-searchbox {
+    opacity: 1 !important;
+}
+
+yt-formatted-string[has-link-only_]:not([force-default-style]) a.yt-simple-endpoint.yt-formatted-string:visited {
+    color: #d8dee9
+}
+
+.ytp-iv-drawer-open .iv-drawer, .iv-card-content {
+    background: #2e3340
+}
+
+.iv-card-message {
+    border: none;
+    color: #d8dee9;
+}
+
+.iv-card .iv-card-primary-link {
+    color: #d8dee9 !important
+}
+
+.iv-card:hover .iv-card-primary-link, .iv-drawer-content * {
+    color: #d8dee9 !important
+}
+
+.iv-card-image {
+    border: none;
+}
+
+#container.ytd-sentiment-bar-renderer {
+    background-color: #4c556a
+    }
 }
