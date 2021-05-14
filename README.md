@@ -25,7 +25,7 @@ The only thing you need to have installed before trying to install nordtube is t
 * Website: https://sheepdev.xyz
 * Twitter: [@imsheeeep](https://twitter.com/imsheeeep)
 * GitHub: [@sheeepdev](https://github.com/sheeepdev)
-* Discord: [**sheep#2428**](https://discord.com/users/429303151598895106) (Friend requests disabled, DM me elsewhere and ill add you)
+* Discord: [sheep#2428](https://discord.com/users/429303151598895106) (Friend requests disabled, DM me elsewhere and ill add you)
 
 ## 🤝 Contributing
 
