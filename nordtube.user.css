@@ -598,4 +598,24 @@ yt-formatted-string[has-link-only_]:not([force-default-style]) a.yt-simple-endpo
 #container.ytd-sentiment-bar-renderer {
     background-color: #4c556a
     }
+    #container.ytd-playlist-panel-renderer, .header.ytd-playlist-panel-renderer, .playlist-items.ytd-playlist-panel-renderer {
+    border: none;
+    background-color: #2e3340
+}
+
+ytd-thumbnail-overlay-resume-playback-renderer {
+    background-color: #4c556a
+}
+
+ytd-toggle-button-renderer.style-grey-text[is-icon-button], .index-message-wrapper.ytd-playlist-panel-renderer, ytd-playlist-panel-video-renderer[watch-color-update] #index.ytd-playlist-panel-video-renderer {
+    color: #d8dee9
+}
+
+ytd-playlist-panel-video-renderer[watch-color-update][can-reorder]:hover.dragging, ytd-playlist-panel-video-renderer[watch-color-update][can-reorder].dragging, ytd-playlist-panel-video-renderer[watch-color-update]:hover:not(.dragging) {
+    background-color: #434c5e !important;
+}
+
+ytd-playlist-panel-video-renderer[selected][watch-color-update] {
+    background-color: #3b4252 !important;
+    }
 }
