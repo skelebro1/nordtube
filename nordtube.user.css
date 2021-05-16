@@ -12,12 +12,12 @@
 
 
 @-moz-document domain('youtube.com') {
-    
-#container.ytd-masthead {
+
+body {
     background-color: #2e3340
 }
 
-ytd-watch-flexy[flexy][is-two-columns_] #columns.ytd-watch-flexy {
+#container.ytd-masthead {
     background-color: #2e3340
 }
 
