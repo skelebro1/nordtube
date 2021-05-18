@@ -38,6 +38,7 @@ Give a ⭐️ if you like this project!
 ## 📝 Note
 
 This is my **personal** theme, there may be some things that you won't like. You'll need to change that by yourself.
+But in the future I will add variables which will allow you to change the colors.
 
 ## 📩 License
 
