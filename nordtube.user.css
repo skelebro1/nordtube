@@ -631,3 +631,32 @@ ytd-playlist-panel-video-renderer[watch-color-update][can-reorder]:hover.draggin
 ytd-playlist-panel-video-renderer[selected][watch-color-update] {
     background-color: var(--bg-light) !important;
 }
+
+#author-name.moderator.yt-live-chat-author-chip, yt-live-chat-author-badge-renderer[type="moderator"] {
+    color: var(--accent-light)
+}
+
+ytd-video-secondary-info-renderer {
+    border: none;
+}
+
+.more-button.ytd-video-secondary-info-renderer, .less-button.ytd-video-secondary-info-renderer {
+    text-transform: lowercase;
+}
+
+#icon-label.yt-dropdown-menu {
+    color: var(--text-color);
+    text-transform: lowercase;
+}
+
+yt-sort-filter-sub-menu-renderer.ytd-comments-header-renderer {
+    --iron-icon-fill-color: var(--text-color);
+}
+
+tp-yt-paper-listbox.yt-dropdown-menu tp-yt-paper-item.yt-dropdown-menu:hover {
+    background-color: var(--bg-lighter)
+}
+
+tp-yt-paper-listbox.yt-dropdown-menu .iron-selected.yt-dropdown-menu {
+    background-color: var(--bg-light)
+}	

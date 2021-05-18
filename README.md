@@ -13,7 +13,7 @@
 
 The only thing you need to have installed before trying to install nordtube is the [stylus](https://github.com/openstyles/stylus) browser extension
 
-❗ You need to have **dark mode** enabled on youtube because the theme wont work if you dont have dark mode on!
+For now dark mode is **required** for the theme to work.
 
 [Click here to install nordtube](https://github.com/sheeepdev/nordtube/raw/main/nordtube.user.css)
 
