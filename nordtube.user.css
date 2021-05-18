@@ -1,44 +1,41 @@
-/* ==UserStyle==
-@name         nordtube
-@description  youtube theme based on the nord colorscheme
-@namespace    https://github.com/sheeepdev/nordtube
-@homepageURL  https://github.com/sheeepdev/nordtube
-@supportURL   https://github.com/sheeepdev/nordtube/issues
-@updateURL    https://github.com/sheeepdev/nordtube/raw/main/nordtube.user.css
-@author       sheep <me@sheepdev.xyz> (https://github.com/sheeepdev)
-@version      1.0.0
-@license      MIT
-==/UserStyle== */
-
-
-@-moz-document domain('youtube.com') {
+:root {
+    --bg: #2e3340;
+    --bg-light: #3b4252;
+    --bg-lighter: #434c5e; 
+    --bg-lightest: #4c556a;  
+    --accent: #5e81ac;
+    --accent-light: #81a1c1;
+    --text-color: #d8dee9;
+    --green: #a3be8c;
+    --red: #bf616a;
+}
 
 body {
-    background-color: #2e3340
+    background-color: var(--bg)
 }
 
 #container.ytd-masthead {
-    background-color: #2e3340
+    background-color: var(--bg)
 }
 
 #like-button {
-    color: #5e81ac
+    color: var(--accent)
 }
 
 tp-yt-paper-button.ytd-subscribe-button-renderer[subscribed] {
-    color: #d8dee9;
-    background-color: #4c566a;
+    color: var(--text-color);
+    background-color: var(--bg-lighter);
     border-radius: 20px;
 }
 
 tp-yt-paper-button.ytd-subscribe-button-renderer {
-    background-color: #5e81ac;
-    color: #d8dee9;
+    background-color: var(--accent);
+    color: var(--text-color);
     border-radius: 20px;
 }
 
 ytd-subscription-notification-toggle-button-renderer #button.ytd-subscription-notification-toggle-button-renderer {
-    color: #d8dee9
+    color: var(--text-color)
 }
 
 .sbsb_a, .sbdd_b {
@@ -46,70 +43,74 @@ ytd-subscription-notification-toggle-button-renderer #button.ytd-subscription-no
 }
 
 #container.ytd-searchbox {
-    background-color: #2e3340;
-    color: #d8dee9;
-    BORDER: NONE;
+    background-color: var(--bg);
+    color: var(--text-color);
+    border: none;
 }
 
 #search-icon-legacy.ytd-searchbox {
-    background-color: #2e3340
+    background-color: var(--bg)
+}
+
+#logo-icon > svg > g > g:nth-child(1) > path{
+    fill: var(--accent);
 }
 
 #search-icon-legacy.ytd-searchbox {
-    color: #d8dee9;
+    color: var(--text-color);
     border: none;
 }
 
 #search-icon-legacy.ytd-searchbox yt-icon.ytd-searchbox {
-    color: #D8DEE9 !iMPORTANT;
+    color: var(--text-color) !important;
 }
 
 #notification-count.ytd-notification-topbar-button-renderer {
-    BACKGROUND-COLOR: #5E81AC
+    background-color: var(--accent)
 }
 
 ytd-toggle-button-renderer.force-icon-button a.ytd-toggle-button-renderer {
-    color: #5e81ac
+    color: var(--accent)
 }
 
 ytd-toggle-button-renderer.style-text[is-icon-button] #text.ytd-toggle-button-renderer {
-    color: #d8dee9
+    color: var(--text-color)
 }
 
 #like-bar.ytd-sentiment-bar-renderer {
-    background-color: #5e81ac
+    background-color: var(--accent)
 }
 
 ytd-button-renderer #button.ytd-button-renderer {
-    color: #d8dee9
+    color: var(--text-color)
 }
 
 ytd-button-renderer.style-text[is-icon-button] #text.ytd-button-renderer, ytd-button-renderer.style-default[is-icon-button] #text.ytd-button-renderer, ytd-button-renderer.style-opacity[is-icon-button] #text.ytd-button-renderer {
-    color: #d8dee9
+    color: var(--text-color)
 }
 
 #button.ytd-menu-renderer yt-icon.ytd-menu-renderer {
-    color: #d8dee9
+    color: var(--text-color)
 }
 
 #chat-messages.yt-live-chat-renderer, #contents.yt-live-chat-renderer, #item-list.yt-live-chat-renderer {
-    background-color: #2e3340
+    background-color: var(--bg)
 }
 
 #contentWrapper.tp-yt-iron-dropdown > * {
-    background-color: #2e3340
+    background-color: var(--bg)
 }
 
 ytd-active-account-header-renderer {
-    background-color: #2e3340
+    background-color: var(--bg)
 }
 
 yt-icon.ytd-compact-link-renderer, yt-icon.ytd-toggle-theme-compact-link-renderer {
-    color: #d8dee9
+    color: var(--text-color)
 }
 
 ytd-button-renderer.style-suggestive[is-paper-button] {
-    background-color: #81a1c1;
+    background-color: var(--accent-light);
 }
 
 ytd-button-renderer.style-suggestive[is-paper-button] paper-button.ytd-button-renderer {
@@ -117,7 +118,7 @@ ytd-button-renderer.style-suggestive[is-paper-button] paper-button.ytd-button-re
 }
 
 a.ytd-rich-metadata-renderer {
-    background-color: #2e3340
+    background-color: var(--bg)
 }
 
 #chips.yt-chip-cloud-renderer {
@@ -133,11 +134,11 @@ ytd-thumbnail.ytd-rich-grid-media, ytd-thumbnail.ytd-rich-grid-media::before {
 }
 
 yt-icon.ytd-badge-supported-renderer {
-    color: #5e81ac;
+    color: var(--accent);
 }
 
 #owner-sub-count.ytd-video-owner-renderer, yt-formatted-string.ytd-video-primary-info-renderer, span.ytd-video-view-count-renderer {
-    color: #d8dee9
+    color: var(--text-color)
 }
 
 ytd-menu-popup-renderer {
@@ -145,11 +146,11 @@ ytd-menu-popup-renderer {
 }
 
 tp-yt-paper-listbox {
-    background-color: #2e3340;
+    background-color: var(--bg);
 }
 
 yt-icon.ytd-menu-service-item-renderer {
-    color: #d8dee9
+    color: var(--text-color)
 }
 
 #chips.ytd-feed-filter-chip-bar-renderer, ytd-feed-filter-chip-bar-renderer {
@@ -157,7 +158,7 @@ yt-icon.ytd-menu-service-item-renderer {
 }
 
 ytd-rich-grid-renderer {
-    background-color: #2e3340
+    background-color: var(--bg)
 }
 
 .html5-video-player.ytp-autonav-endscreen-cancelled-state {
@@ -169,7 +170,7 @@ ytd-rich-grid-renderer {
 }
 
 ytd-mini-guide-renderer.ytd-app {
-    background-color: #2e3340
+    background-color: var(--bg)
 }
 
 ytd-watch-flexy[flexy][is-two-columns_] #columns.ytd-watch-flexy {
@@ -178,7 +179,7 @@ ytd-watch-flexy[flexy][is-two-columns_] #columns.ytd-watch-flexy {
 }
 
 ytd-watch-flexy[flexy][flexy-large-window_]:not([is-extra-wide-video_]), ytd-watch-flexy[flexy][flexy-large-window_][transcript-opened_][is-two-columns_]:not([is-extra-wide-video_]), ytd-watch-flexy[flexy][flexy-large-window_][playlist][is-two-columns_]:not([is-extra-wide-video_]), ytd-watch-flexy[flexy][flexy-large-window_][should-stamp-chat][is-two-columns_]:not([is-extra-wide-video_]) {
-    background-color: #2e3340
+    background-color: var(--bg)
 }
 
 .ytp-videowall-still-image {
@@ -190,8 +191,8 @@ ytd-live-chat-frame {
 }
 
 #show-hide-button.ytd-live-chat-frame > ytd-toggle-button-renderer.ytd-live-chat-frame{
-    background-color: #2e3340;
-    color: #d8dee9;
+    background-color: var(--bg);
+    color: var(--text-color);
 }
 
 ytd-button-renderer.style-suggestive[is-paper-button]  {
@@ -199,15 +200,15 @@ ytd-button-renderer.style-suggestive[is-paper-button]  {
 }
 
 .fit.tp-yt-paper-dialog-scrollable, #top-bar.ytd-sponsorships-offer-renderer {
-    background-color: #2e3340
+    background-color: var(--bg)
 }
 
 yt-button-renderer #button.yt-button-renderer {
-    background-color: #81a1c1
+    background-color: var(--accent-light)
 }
 
 yt-button-renderer #button.yt-button-renderer {
-    color: #d8dee9
+    color: var(--text-color)
 }
 
 yt-button-renderer.style-primary[is-paper-button] {
@@ -219,27 +220,27 @@ yt-button-renderer.style-primary[is-paper-button] {
 }
 
 a.yt-simple-endpoint.yt-formatted-string {
-    color: #5e81ac
+    color: var(--accent)
 }
 
 a.yt-simple-endpoint.yt-formatted-string:hover {
-    color: #81a1c1
+    color: var(--accent-light)
 }
 
 ytd-simple-menu-header-renderer {
-    background-color: #2e3340
+    background-color: var(--bg)
 }
 
 #text.ytd-channel-name, #metadata-line.ytd-video-meta-block span.ytd-video-meta-block {
-    color: #d8dee9
+    color: var(--text-color)
 }
 
 .badge-style-type-simple.ytd-badge-supported-renderer {
-    background: #3b4252 !Important;
+    background: var(--bg-light) !Important;
 }
 
 .badge-style-type-simple.ytd-badge-supported-renderer {
-    color: #d8dee9
+    color: var(--text-color)
 }
 
 .badge-style-type-simple.ytd-badge-supported-renderer {
@@ -251,23 +252,23 @@ ytd-simple-menu-header-renderer {
 }
 
 ytd-author-comment-badge-renderer[creator] {
-    background-color: #5e81ac
+    background-color: var(--accent)
 }
 
 #like-button.ytd-comment-action-buttons-renderer {
-    color: #5e81ac
+    color: var(--accent)
 }
 
 #dislike-button.ytd-comment-action-buttons-renderer {
-    color: #81a1c1
+    color: var(--accent-light)
 }
 
 #label.ytd-pinned-comment-badge-renderer, yt-formatted-string[has-link-only_]:not([force-default-style]) a.yt-simple-endpoint.yt-formatted-string {
-    color: #d8dee9
+    color: var(--text-color)
 }
 
 #label-icon.yt-dropdown-menu, #icon-label.yt-dropdown-menu, #simplebox-placeholder.ytd-comment-simplebox-renderer, .more-button.ytd-video-secondary-info-renderer, .less-button.ytd-video-secondary-info-renderer {
-    color: #d8dee9 !important;
+    color: var(--text-color) !important;
 }
 
 #voice-search-button.ytd-masthead .ytd-masthead[is-icon-button] {
@@ -283,39 +284,39 @@ ytd-commentbox {
 }
 
 ytd-button-renderer.style-primary[is-paper-button] {
-    background-color: #5e81ac;
+    background-color: var(--accent);
     border-radius: 20px;
 }
 
 #sections.ytd-guide-renderer > ytd-guide-section-renderer.ytd-guide-renderer:not(:first-child), #sections.ytd-guide-renderer > ytd-guide-subscriptions-section-renderer.ytd-guide-renderer {
-    background-color: #2e3340;
+    background-color: var(--bg);
     border-bottom: none;
 }
 
 #sections.ytd-guide-renderer > .ytd-guide-renderer:not(:last-child) {
-    background-color: #2e3340;
+    background-color: var(--bg);
     border-bottom: none;
 }
 
 ytd-app:not([background-color-update_]) tp-yt-app-drawer.ytd-app:not([persistent]).ytd-app #header.ytd-app {
-    background-color: #2e3340;
+    background-color: var(--bg);
     border-bottom: none;
 }
 
 .guide-icon.ytd-guide-entry-renderer {
-    color: #d8dee9
+    color: var(--text-color)
 }
 
 #guide-section-title.ytd-guide-section-renderer {
-    color: #d8dee9
+    color: var(--text-color)
 }
 
 #guide-links-primary.ytd-guide-renderer, #guide-links-secondary.ytd-guide-renderer, #footer.ytd-guide-renderer > #copyright {
-    background-color: #2e3340
+    background-color: var(--bg)
 }
 
 #footer.ytd-guide-renderer > #copyright, #guide-links-primary.ytd-guide-renderer > a, #guide-links-secondary.ytd-guide-renderer > a, .metadata.ytd-notification-renderer {
-    color: #d8dee9
+    color: var(--text-color)
 }
 
 #contentWrapper.tp-yt-iron-dropdown > * {
@@ -328,23 +329,23 @@ ytd-simple-menu-header-renderer {
 }
 
 #vote-count-middle.ytd-comment-action-buttons-renderer {
-    color: #d8dee9
+    color: var(--text-color)
 }
 
-channel-header.ytd-c4-tabbed-header-renderer {
-    background-color: #3b4252
+#channel-header.ytd-c4-tabbed-header-renderer {
+    background-color: var(--bg-light)
 }
 
 #header.ytd-browse, #tabs-inner-container.ytd-c4-tabbed-header-renderer {
-    background-color: #3b4252
+    background-color: var(--bg-light)
 }
 
 ytd-page-manager > .ytd-page-manager {
-    background-color: #2e3340
+    background-color: var(--bg)
 }
 
 .tab-content.tp-yt-paper-tab, tp-yt-paper-tab.iron-selected.ytd-c4-tabbed-header-renderer {
-    color: #d8dee9
+    color: var(--text-color)
 }
 
 ytd-playlist-thumbnail #thumbnail.ytd-playlist-thumbnail {
@@ -352,7 +353,7 @@ ytd-playlist-thumbnail #thumbnail.ytd-playlist-thumbnail {
 }
 
 #metadata.ytd-channel-renderer, #description.ytd-channel-renderer, #subscriber-count.ytd-c4-tabbed-header-renderer {
-    color: #d8dee9
+    color: var(--text-color)
 }
 
 ytd-backstage-post-thread-renderer {
@@ -360,7 +361,7 @@ ytd-backstage-post-thread-renderer {
 }
 
 .progress-bar.ytd-backstage-poll-renderer {
-    background-color: #4c556a;
+    background-color: var(--bg-lightest);
     border-radius: 5px;
 }
 
@@ -369,16 +370,16 @@ ytd-backstage-poll-renderer[show-poll-choice-border] tp-yt-paper-item.ytd-backst
 }
 
 yt-icon.checked.ytd-backstage-poll-renderer {
-    color: #5e81ac
+    color: var(--accent)
 }
 
 tp-yt-paper-item.ytd-backstage-poll-renderer[selected] .progress-bar.ytd-backstage-poll-renderer {
-    background-color: #5e81ac;
+    background-color: var(--accent);
     border-radius: 5px;
 }
 
 yt-icon.ytd-backstage-poll-renderer, #vote-info.ytd-backstage-poll-renderer {
-    color: #d8dee9
+    color: var(--text-color)
 }
 
 ytd-backstage-poll-renderer[show-poll-choice-border] .choice-info.ytd-backstage-poll-renderer {
@@ -394,7 +395,7 @@ ytd-video-primary-info-renderer {
 }
 
 yt-live-chat-header-renderer {
-    background-color: #2e3340;
+    background-color: var(--bg);
 }
 
 yt-live-chat-banner-manager.yt-live-chat-item-list-renderer {
@@ -402,60 +403,72 @@ yt-live-chat-banner-manager.yt-live-chat-item-list-renderer {
 }
 
 #menu.yt-live-chat-text-message-renderer {
-    background: #2e3340;
-    color: #d8dee9;
-    }
-    yt-live-chat-viewer-engagement-message-renderer, #card.yt-live-chat-viewer-engagement-message-renderer {
-    background: #2e3340
+    background: var(--bg);
+    color: var(--text-color);
+}
+
+yt-live-chat-viewer-engagement-message-renderer, #card.yt-live-chat-viewer-engagement-message-renderer {
+    background: var(--bg)
 }
 
 #author-name.yt-live-chat-author-chip {
-    color: #d8dee9
+    color: var(--text-color)
 }
 
 yt-icon-button.yt-live-chat-item-list-renderer {
-    background-color: #5e81ac
+    background-color: var(--accent)
 }
 
 #items.yt-live-chat-ticker-renderer {
-    background: #2e3340
+    background: var(--bg)
 }
-    paper-button.yt-next-continuation {
-    color: #81a1c1
+
+paper-button.yt-next-continuation {
+    color: var(--accent-light)
 }
-    
-    #progress.ytd-thumbnail-overlay-resume-playback-renderer {
-    background-color: #5e81ac
-    }
-    
-    .super-title-icon.ytd-video-primary-info-renderer {
-    color: #5e81ac
-    }
-    ytd-mini-guide-entry-renderer {
-    background: #2e3340
+
+#progress.ytd-thumbnail-overlay-resume-playback-renderer {
+    background-color: var(--accent)
 }
-    
+
+.super-title-icon.ytd-video-primary-info-renderer {
+    color: var(--accent)
+}
+
+* {
+    text-transform: lowercase;
+}
+
+ytd-mini-guide-entry-renderer {
+    background: var(--bg)
+}
+
+
 .guide-icon.ytd-mini-guide-entry-renderer, .title.ytd-mini-guide-entry-renderer {
-    color: #d8dee9
-    }
-    ytd-searchbox[has-focus] #container.ytd-searchbox {
+    color: var(--text-color)
+}
+
+ytd-searchbox[has-focus] #container.ytd-searchbox {
     border: none;
     box-shadow: none;
-    }
-    yt-live-chat-text-message-renderer[author-is-owner] {
-    background: #2e3340
+}
+
+yt-live-chat-text-message-renderer[author-is-owner] {
+    background: var(--bg)
 }
 
 yt-live-chat-author-chip[is-highlighted] #author-name.owner.yt-live-chat-author-chip, #author-name.owner.yt-live-chat-author-chip {
-    background-color: #5e81ac;
-    color: #d8dee9;
+    background-color: var(--accent);
+    color: var(--text-color);
     border-radius: 15px;
-    }
-    ytd-button-renderer.style-suggestive[is-paper-button] tp-yt-paper-button.ytd-button-renderer {
+}
+
+ytd-button-renderer.style-suggestive[is-paper-button] tp-yt-paper-button.ytd-button-renderer {
     border: none;
-    }
-    #header-section.ytd-donation-shelf-renderer, #donate-section.ytd-donation-shelf-renderer, #creator-messages-section.ytd-donation-shelf-renderer, #nonprofit-section.ytd-donation-shelf-renderer, #collapse-controls-section.ytd-donation-shelf-renderer {
-    background-color: #2e3340
+}
+
+#header-section.ytd-donation-shelf-renderer, #donate-section.ytd-donation-shelf-renderer, #creator-messages-section.ytd-donation-shelf-renderer, #nonprofit-section.ytd-donation-shelf-renderer, #collapse-controls-section.ytd-donation-shelf-renderer {
+    background-color: var(--bg)
 }
 
 #collapse-controls-section.ytd-donation-shelf-renderer, #creator-messages-section.ytd-donation-shelf-renderer, #nonprofit-section.ytd-donation-shelf-renderer, ytd-donation-shelf-renderer  {
@@ -467,68 +480,64 @@ yt-live-chat-author-chip[is-highlighted] #author-name.owner.yt-live-chat-author-
 }
 
 #progress-bar-fill.ytd-donation-shelf-renderer {
-    background-color: #81a1c1
+    background-color: var(--accent-light)
 }
 
 #progress-bar.ytd-donation-shelf-renderer {
-    background-color: #3b4252
+    background-color: var(--bg-light)
 }
 
 .creator-message.ytd-donation-shelf-renderer, #campaign-subtitle.ytd-donation-shelf-renderer, #nonprofit-description.ytd-donation-shelf-renderer, #nonprofit-subtitle.ytd-donation-shelf-renderer, #collapse-controls-section.ytd-donation-shelf-renderer {
-    color: #d8dee9
+    color: var(--text-color)
 }
 
 #nonprofit-title.ytd-donation-shelf-renderer yt-icon.ytd-donation-shelf-renderer {
-    color: #81a1c1
+    color: var(--accent-light)
 }
 
 .badge-style-type-ypc.ytd-badge-supported-renderer {
-    color: #a3be8c
+    color: var(--green)
 }
 
 .badge-style-type-ypc.ytd-badge-supported-renderer {
-    background-color: #4c556a;
+    background-color: var(--bg-lightest);
     border-radius: 20px;
-    }
-    hearted.ytd-creator-heart-renderer, #hearted-border.ytd-creator-heart-renderer {
-    color: #5e81ac
-    }
-    #logo-icon > svg > g > g:nth-child(1) > path{
-    fill: #5e81ac;
-    }
-    .badge-style-type-live-now.ytd-badge-supported-renderer, .badge-style-type-starting-soon.ytd-badge-supported-renderer {
-    background: #bf616a;
-    color: #d8dee9;
+}
+
+#hearted.ytd-creator-heart-renderer, #hearted-border.ytd-creator-heart-renderer {
+    color: var(--accent)
+}
+
+tp-yt-paper-listbox.yt-dropdown-menu {
+    background-color: var(--bg)
+}
+
+.badge-style-type-live-now.ytd-badge-supported-renderer, .badge-style-type-starting-soon.ytd-badge-supported-renderer {
+    background: var(--red);
+    color: var(--text-color);
     border: none;
     border-radius: 5px;
-    }
-    #like-button.ytd-comment-action-buttons-renderer.style-default-active {
+}
+
+#like-button.ytd-comment-action-buttons-renderer.style-default-active {
     color: #88c0d0;
 }
 
 #dislike-button.ytd-comment-action-buttons-renderer.style-default-active {
     color: #88c0d0;
-    }
-    #header.ytd-add-to-playlist-renderer, ytd-add-to-playlist-renderer[dialog] #close-button.ytd-add-to-playlist-renderer, #playlists.ytd-add-to-playlist-renderer, ytd-compact-link-renderer:not([has-secondary]) tp-yt-paper-item.ytd-compact-link-renderer {
-    background-color: #2e3340;
-    color: #d8dee9;
-    border: none;
 }
 
-yt-icon.ytd-playlist-add-to-option-renderer {
-    color: #d8dee9
-    }
-    ytd-topbar-menu-button-renderer #button.ytd-topbar-menu-button-renderer {
+ytd-topbar-menu-button-renderer #button.ytd-topbar-menu-button-renderer {
     display: none !important;
 }
 
 yt-live-chat-message-input-renderer {
-    background: #2e3340;
-    color: #d8dee9;
+    background: var(--bg);
+    color: var(--text-color);
 }
 
 #picker-buttons.yt-live-chat-message-input-renderer > .yt-live-chat-message-input-renderer {
-    color: #d8dee9
+    color: var(--text-color)
 }
 
 yt-button-renderer #button.yt-button-renderer {
@@ -536,7 +545,7 @@ yt-button-renderer #button.yt-button-renderer {
 }
 
 #label.yt-live-chat-text-input-field-renderer {
-    color: #d8dee9
+    color: var(--text-color)
 }
 
 #unfocused.yt-live-chat-text-input-field-renderer {
@@ -544,21 +553,24 @@ yt-button-renderer #button.yt-button-renderer {
 }
 
 #focused.yt-live-chat-text-input-field-renderer {
-    background-color: #81a1c1
-    }
-    ytd-sentiment-bar-renderer[activated] #like-bar.ytd-sentiment-bar-renderer {
-    background-color: #5e81ac
-    }
-    .cont-button.ytd-comment-replies-renderer {
-        color: #81a1c1
-    }
-    #sections.ytd-multi-page-menu-renderer > .ytd-multi-page-menu-renderer:not(:last-child), ytd-multi-page-menu-renderer[menu-style="multi-page-menu-style-type-notifications"] #sections.ytd-multi-page-menu-renderer > .ytd-multi-page-menu-renderer {
-    background-color: #2e3340;
+    background-color: var(--accent-light)
+}
+
+ytd-sentiment-bar-renderer[activated] #like-bar.ytd-sentiment-bar-renderer {
+    background-color: var(--accent)
+}
+
+.cont-button.ytd-comment-replies-renderer {
+    color: var(--accent-light)
+}
+
+#sections.ytd-multi-page-menu-renderer > .ytd-multi-page-menu-renderer:not(:last-child), ytd-multi-page-menu-renderer[menu-style="multi-page-menu-style-type-notifications"] #sections.ytd-multi-page-menu-renderer > .ytd-multi-page-menu-renderer {
+    background-color: var(--bg);
     border: none;
 }
 
 .more-button.ytd-comment-renderer, .less-button.ytd-comment-renderer {
-    color: #d8dee9
+    color: var(--text-color)
 }
 
 ::placeholder {
@@ -571,24 +583,24 @@ yt-button-renderer #button.yt-button-renderer {
 }
 
 yt-formatted-string[has-link-only_]:not([force-default-style]) a.yt-simple-endpoint.yt-formatted-string:visited {
-    color: #d8dee9
+    color: var(--text-color)
 }
 
 .ytp-iv-drawer-open .iv-drawer, .iv-card-content {
-    background: #2e3340
+    background: var(--bg)
 }
 
 .iv-card-message {
     border: none;
-    color: #d8dee9;
+    color: var(--text-color);
 }
 
 .iv-card .iv-card-primary-link {
-    color: #d8dee9 !important
+    color: var(--text-color) !important
 }
 
 .iv-card:hover .iv-card-primary-link, .iv-drawer-content * {
-    color: #d8dee9 !important
+    color: var(--text-color) !important
 }
 
 .iv-card-image {
@@ -596,26 +608,26 @@ yt-formatted-string[has-link-only_]:not([force-default-style]) a.yt-simple-endpo
 }
 
 #container.ytd-sentiment-bar-renderer {
-    background-color: #4c556a
-    }
-    #container.ytd-playlist-panel-renderer, .header.ytd-playlist-panel-renderer, .playlist-items.ytd-playlist-panel-renderer {
+    background-color: var(--bg-lightest)
+}
+
+#container.ytd-playlist-panel-renderer, .header.ytd-playlist-panel-renderer, .playlist-items.ytd-playlist-panel-renderer {
     border: none;
-    background-color: #2e3340
+    background-color: var(--bg)
 }
 
 ytd-thumbnail-overlay-resume-playback-renderer {
-    background-color: #4c556a
+    background-color: var(--bg-lightest)
 }
 
 ytd-toggle-button-renderer.style-grey-text[is-icon-button], .index-message-wrapper.ytd-playlist-panel-renderer, ytd-playlist-panel-video-renderer[watch-color-update] #index.ytd-playlist-panel-video-renderer {
-    color: #d8dee9
+    color: var(--text-color)
 }
 
 ytd-playlist-panel-video-renderer[watch-color-update][can-reorder]:hover.dragging, ytd-playlist-panel-video-renderer[watch-color-update][can-reorder].dragging, ytd-playlist-panel-video-renderer[watch-color-update]:hover:not(.dragging) {
-    background-color: #434c5e !important;
+    background-color: var(--bg-lighter) !important;
 }
 
 ytd-playlist-panel-video-renderer[selected][watch-color-update] {
-    background-color: #3b4252 !important;
-    }
+    background-color: var(--bg-light) !important;
 }
