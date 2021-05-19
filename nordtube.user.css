@@ -1,3 +1,18 @@
+/* ==UserStyle==
+@name         nordtube
+@description  🎨 youtube theme based on the nord color scheme 
+@namespace    https://github.com/sheeepdev/nordtube
+@homepageURL  https://github.com/sheeepdev/nordtube
+@supportURL   https://github.com/sheeepdev/nordtube/issues
+@updateURL    https://github.com/sheeepdev/nordtube/raw/main/nordtube.user.css
+@author       sheep <me@sheepdev.xyz> (https://github.com/sheeepdev)
+@version      2.0.0
+@license      CC-BY-4.0
+==/UserStyle== */
+
+
+@-moz-document domain('youtube.com') {
+
 :root {
     --bg: #2e3340;
     --bg-light: #3b4252;
