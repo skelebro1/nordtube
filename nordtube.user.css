@@ -674,4 +674,5 @@ tp-yt-paper-listbox.yt-dropdown-menu tp-yt-paper-item.yt-dropdown-menu:hover {
 
 tp-yt-paper-listbox.yt-dropdown-menu .iron-selected.yt-dropdown-menu {
     background-color: var(--bg-light)
-}	
+    }
+}
