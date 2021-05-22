@@ -48,5 +48,5 @@ Colors are changable by editing the variables in the file.
 
 ## 📩 License
 
-Copyright © 2021 [sheepdev](https://github.com/sheeepdev).<br />
+Copyright © 2021 [sheepdev](https://sheepdev.xyz/)<br />
 This project is licensed under the [CC-BY-4.0](https://github.com/sheeepdev/nordtube/blob/main/LICENSE) license.
