@@ -717,8 +717,15 @@ ytd-button-renderer[disabled][is-paper-button] a.ytd-button-renderer {
     border-radius: 20px;    
 }
 
-.ytp-popup   {
+.ytp-popup {
     background: var(--bg);
     border-radius: 20px;
+    }
+    #guide-section-title.ytd-guide-section-renderer {
+    text-transform: lowercase;
+}
+
+ytd-guide-collapsible-section-entry-renderer.ytd-guide-section-renderer:not(:first-child) {
+    border: none;
     }
 }
