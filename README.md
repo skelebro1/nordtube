@@ -28,10 +28,10 @@ For now dark mode is **required** for the theme to work.
 
 🐏 **sheep**
 
-* Website: https://sheepdev.xyz
-* Twitter: [@imsheeeep](https://twitter.com/imsheeeep)
-* GitHub: [@sheeepdev](https://github.com/sheeepdev)
-* Discord: [sheep#2428](https://discord.com/users/429303151598895106) (Friend requests disabled, DM me elsewhere and ill add you)
+* 🌐 Website: https://sheepdev.xyz
+* 🐦 Twitter: [@imsheeeep](https://twitter.com/imsheeeep)
+* 💻 GitHub: [@sheeepdev](https://github.com/sheeepdev)
+* 💬 Discord: [sheep#2428](https://discord.com/users/429303151598895106) (Friend requests disabled, DM me elsewhere and ill add you)
 
 ## 🤝 Contributing
 
@@ -44,7 +44,7 @@ Give a ⭐️ if you like this project!
 ## 📝 Note
 
 This is my **personal** theme, there may be some things that you won't like. You'll need to change that by yourself.
-But in the future I will add variables which will allow you to change the colors.
+Colors are changable by editing the variables in the file.
 
 ## 📩 License
 
