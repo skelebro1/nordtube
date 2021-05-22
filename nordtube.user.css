@@ -674,4 +674,51 @@ tp-yt-paper-listbox.yt-dropdown-menu tp-yt-paper-item.yt-dropdown-menu:hover {
 tp-yt-paper-listbox.yt-dropdown-menu .iron-selected.yt-dropdown-menu {
     background-color: var(--bg-light)
     }
+    #container.yt-live-chat-restricted-participation-renderer {
+    background-color: var(--bg);
+    color: var(--text-color);
+}
+
+#input-panel.yt-live-chat-renderer:not(:empty) {
+    border: none;
+}
+
+#icon.yt-live-chat-restricted-participation-renderer {
+    color: var(--text-color)
+}
+
+yt-live-chat-toast-renderer[is-showing-message] {
+    background-color: var(--bg-light);
+    border-radius: 20px;
+}
+
+ytd-button-renderer[disabled][is-paper-button] a.ytd-button-renderer {
+    background-color: var(--bg-lightest)
+}
+
+.ytp-live-badge[disabled]::before {
+    background: var(--red)
+}
+
+.ytp-live-badge::before { 
+    background: var(--bg-lightest);
+}
+
+#icon.yt-live-chat-viewer-engagement-message-renderer {
+    color: var(--red) !important;
+}
+
+#subtitle.ytd-rich-metadata-renderer, #call-to-action.ytd-rich-metadata-renderer {
+    color: var(--text-color)
+}
+
+.ytp-settings-menu {
+    background: var(--bg);
+    border-radius: 20px;    
+}
+
+.ytp-popup   {
+    background: var(--bg);
+    border-radius: 20px;
+    }
 }
