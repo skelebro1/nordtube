@@ -19,9 +19,9 @@ For now dark mode is **required** for the theme to work.
 
 🖌️ [Custom Progress Bar](https://33kk.github.io/uso-archive/?style=95280) | Styles your youtube progress bar
 
-Recommended settings for Custom Progress Bar
+⚙️ Recommended settings for Custom Progress Bar
 
-(Color in use is #5e81ac)
+(color in use is #5e81ac)
 
 ![Settings for Custom Progress Bar](./img/settings.png)
 
