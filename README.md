@@ -14,10 +14,9 @@ For now dark mode is **required** for the theme to work.
 
 ## 🎨 Recommended extensions and styles
 
-| Extension                                                                   | Description                                   |
-|-----------------------------------------------------------------------------+-----------------------------------------------|
-| [[https://sponsor.ajay.app/][SponsorBlock]]                                 | Blocks youtube sponsors, intros and more!     |
-| [[https://33kk.github.io/uso-archive/?style=95280][Custom progress bar]]    | Styles your youtube progress bar              |
+
+🛡️ [https://sponsor.ajay.app/](SponsorBlock) | Blocks youtube sponsors, intros and more!
+🖌️ [https://33kk.github.io/uso-archive/?style=95280](Custom progress bar) | Styles your youtube progress bar
 
 
 ## 👤 Author
