@@ -21,8 +21,6 @@ For now dark mode is **required** for the theme to work.
 
 ⚙️ Recommended settings for Custom Progress Bar
 
-(color in use is #5e81ac)
-
 ![Settings for Custom Progress Bar](./img/settings.png)
 
 
