@@ -19,6 +19,8 @@
     --bg-lightest: #4c556a;  
     --accent: #5e81ac;
     --accent-light: #81a1c1;
+    --accent-lighter: #88c0d0;    
+    --accent-lightest: #8fbcbb;
     --text-color: #d8dee9;
     --green: #a3be8c;
     --red: #bf616a;
@@ -727,5 +729,59 @@ ytd-button-renderer[disabled][is-paper-button] a.ytd-button-renderer {
 
 ytd-guide-collapsible-section-entry-renderer.ytd-guide-section-renderer:not(:first-child) {
     border: none;
+    }
+    .iv-branding .branding-context-container-outer, .iv-branding .branding-context-container-inner {
+    background: var(--bg);
+    border-radius: 15px;
+}
+
+.ytp-sb-subscribe, a.ytp-sb-subscribe {
+    background: var(--accent);
+    border-radius: 15px;    
+}
+
+.ytp-sb-unsubscribe {
+    background-color: var(--bg-lightest);
+    color: var(--text-color);
+    border-radius: 15px;
+}
+
+ytd-thumbnail-overlay-time-status-renderer {
+    background-color: var(--bg);
+    color: var(--text-color);
+    border-radius: 7px;
+}
+
+ytd-thumbnail-overlay-hover-text-renderer {
+    background-color: #2e3340f1;
+}
+
+#info-bar.ytd-miniplayer {
+    background: var(--bg);
+}
+
+.ytp-menuitem[aria-checked="true"] .ytp-menuitem-toggle-checkbox {
+    background: var(--accent);
+}
+
+.ytp-panel-header {
+    border: none;
+}
+
+.ytp-menu-label-secondary {
+    color: var(--text-color);
+}
+
+.ytp-menuitem:not([aria-disabled="true"]):hover {
+    background-color: var(--bg-light)
+}
+
+#tooltip.tp-yt-paper-tooltip {
+    background: var(--bg-light);
+    border-radius: 15px;
+}
+
+#like-button.ytd-comment-action-buttons-renderer:hover, #dislike-button.ytd-comment-action-buttons-renderer:hover {
+    color: var(--accent-lightest)
     }
 }
