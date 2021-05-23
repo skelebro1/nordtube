@@ -784,4 +784,11 @@ ytd-thumbnail-overlay-hover-text-renderer {
 #like-button.ytd-comment-action-buttons-renderer:hover, #dislike-button.ytd-comment-action-buttons-renderer:hover {
     color: var(--accent-lightest)
     }
+    ytd-menu-service-item-renderer[is-selected] {
+    background: var(--bg-light)
+}
+
+tp-yt-paper-item.ytd-menu-service-item-renderer:hover, ytd-menu-service-item-renderer[is-selected] tp-yt-paper-item.ytd-menu-service-item-renderer:hover {
+    background: var(--bg-lighter)
+    }
 }
