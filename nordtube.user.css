@@ -16,7 +16,8 @@
     --bg: #2e3340;
     --bg-light: #3b4252;
     --bg-lighter: #434c5e; 
-    --bg-lightest: #4c556a;  
+    --bg-lightest: #4c556a;
+    --bg-transparent: #2e3340f1;
     --accent: #5e81ac;
     --accent-light: #81a1c1;
     --accent-lighter: #88c0d0;    
@@ -753,7 +754,7 @@ ytd-thumbnail-overlay-time-status-renderer {
 }
 
 ytd-thumbnail-overlay-hover-text-renderer {
-    background-color: #2e3340f1;
+    background-color: var(--bg-transparent);
 }
 
 #info-bar.ytd-miniplayer {
@@ -790,5 +791,72 @@ ytd-thumbnail-overlay-hover-text-renderer {
 
 tp-yt-paper-item.ytd-menu-service-item-renderer:hover, ytd-menu-service-item-renderer[is-selected] tp-yt-paper-item.ytd-menu-service-item-renderer:hover {
     background: var(--bg-lighter)
+    }
+    #info-bar.ytd-miniplayer .channel.ytd-miniplayer {
+    color: var(--text-color);
+}
+
+ytd-notification-renderer.unread #new.ytd-notification-renderer {
+    background-color: var(--accent)
+}
+
+.thumbnail-container.ytd-notification-renderer {
+    border-radius: 15px;
+}
+
+html:not(.style-scope) {
+       --yt-spec-static-brand-red: var(--accent);
+}
+
+.not-found {
+    background: var(--bg);
+}
+
+.not-found-content__paragraph {
+    color: var(--text-color)
+}
+
+.not-found-search__field,.not-found-search__search-button:hover, .not-found-search__search-button {
+    background: var(--bg);
+    border: none;
+    box-shadow: none;
+}
+
+.not-found-search__search-button {
+    color: var(--text-color) !important;
+}
+
+yt-icon.ytd-menu-navigation-item-renderer {
+    color: var(--text-color)
+}
+
+yt-confirm-dialog-renderer[dialog][dialog][dialog], tp-yt-paper-dialog {
+    background-color: var(--bg);
+    border-radius: 20px;
+}
+
+#cancel-button.yt-confirm-dialog-renderer, #confirm-button.yt-confirm-dialog-renderer {
+    border-radius: 20px;
+}
+
+.buttons.yt-confirm-dialog-renderer {
+    border: none;
+}
+
+#scroller.yt-confirm-dialog-renderer {
+    color: var(--text-color);
+}
+
+.unfocused-line.tp-yt-paper-input-container {
+    border-color: var(--bg-lightest)
+}
+
+.underline.is-highlighted.tp-yt-paper-input-container .focused-line.tp-yt-paper-input-container {
+    border-color: var(--accent)
+}
+
+.ytp-exp-ppp-update .ytp-paid-content-overlay-link {
+    background: var(--bg-transparent);
+    border-left: 4px solid var(--accent);
     }
 }
