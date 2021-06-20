@@ -1007,4 +1007,61 @@ ytd-section-list-renderer:not([hide-bottom-separator]):not([page-subtype="histor
 .html5-video-player:not(.ytp-transparent), .html5-video-player.unstarted-mode, .html5-video-player.ad-showing, .html5-video-player.ended-mode, .html5-video-player.ytp-fullscreen {
     border-radius: 20px; 
     }
+    #author-name.member.yt-live-chat-author-chip {
+    color: var(--green)
+}
+
+a.yt-simple-endpoint.yt-formatted-string:visited {
+    color: var(--accent-light)
+}
+
+#header.ytd-engagement-panel-title-header-renderer, ytd-macro-markers-list-item-renderer {
+    background: var(--bg);
+}
+
+ytd-macro-markers-list-item-renderer:hover, ytd-macro-markers-list-item-renderer[active] {
+    background: var(--bg-light)
+}
+
+#sync-container.ytd-macro-markers-list-renderer {
+    background: var(--bg);
+    color: var(--text-color);
+    box-shadow: none;
+    border-radius: 0;
+}
+
+ytd-engagement-panel-section-list-renderer {
+    border: none;
+}
+
+#time.ytd-macro-markers-list-item-renderer {
+    background: var(--accent);
+    color: var(--text-color);
+    border-radius: 20px;
+}
+
+#active-indicator.ytd-macro-markers-list-item-renderer {
+    background: var(--accent);
+}
+
+ytd-macro-markers-list-item-renderer[active] #thumbnail.ytd-macro-markers-list-item-renderer {
+    outline: 2px solid var(--accent);
+}
+
+tp-yt-paper-button {
+    text-transform: lowercase;
+}
+
+.ytp-bezel-text {
+    background: var(--bg);
+    border-radius: 20px;
+}
+
+#metadata-line.ytd-grid-video-renderer, #description-text.ytd-video-renderer {
+    color: var(--text-color);
+}
+
+button.yt-icon-button[aria-label="Search"] > yt-icon > svg > g > path {
+    fill: var(--text-color);
+    }
 }
