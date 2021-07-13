@@ -1099,7 +1099,10 @@ ytd-thumbnail-overlay-endorsement-renderer {
 #bottom-right-corner.ytd-thumbnail-overlay-endorsement-renderer {
     border: none;
 }
-    #details-container.ytd-channel-about-metadata-renderer table.ytd-channel-about-metadata-renderer, .deemphasize.yt-formatted-string {
+#details-container.ytd-channel-about-metadata-renderer table.ytd-channel-about-metadata-renderer, .deemphasize.yt-formatted-string {
     color: var(--text-color);   
+}
+    .iv-branding .branding-img-container img {
+    border-radius: 50%;
     }
 }
