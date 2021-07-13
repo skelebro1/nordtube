@@ -29,6 +29,7 @@ For now dark mode is **required** for the theme to work.
 🐏 **sheep**
 
 * 🌐 Website: https://sheepdev.xyz
+* 📧 Email: [me@sheepdev.xyz](mailto:me@sheepdev.xyz)
 * 🐦 Twitter: [@imsheeeep](https://twitter.com/imsheeeep)
 * 💻 GitHub: [@sheeepdev](https://github.com/sheeepdev)
 * 💬 Discord: [sheep#2428](https://discord.com/users/429303151598895106) (Friend requests disabled, DM me elsewhere and ill add you)
