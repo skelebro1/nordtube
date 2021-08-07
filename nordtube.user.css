@@ -1102,7 +1102,38 @@ ytd-thumbnail-overlay-endorsement-renderer {
 #details-container.ytd-channel-about-metadata-renderer table.ytd-channel-about-metadata-renderer, .deemphasize.yt-formatted-string {
     color: var(--text-color);   
 }
-    .iv-branding .branding-img-container img {
+    
+.iv-branding .branding-img-container img {
     border-radius: 50%;
-    }
+}
+    
+.html5-video-player:not(.ytp-transparent), .html5-video-player.unstarted-mode, .html5-video-player.ad-showing, .html5-video-player.ended-mode, .html5-video-player.ytp-fullscreen {
+    background: var(--bg)
+}
+
+#container.yt-clip-creation-renderer, #footer.yt-clip-creation-renderer {
+    background: var(--bg);  
+}
+
+yt-clip-creation-scrubber-view, #publicity-label.yt-clip-creation-renderer   {
+    color: var(--text-color)
+}
+
+input.yt-clip-creation-scrubber-renderer {
+    background: var(--bg-light);
+    border-radius: 20px;
+    border: none;
+}
+
+#paper-input-label-1::placeholder {
+    color: var(--text-color )
+}
+
+ytd-engagement-panel-section-list-renderer {
+    border-radius: 20px;
+}
+
+ytd-masthead[desktop-mic-background] #voice-search-button.ytd-masthead {
+    background: transparent;
+    }  
 }
