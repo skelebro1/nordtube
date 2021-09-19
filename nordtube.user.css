@@ -1135,5 +1135,28 @@ ytd-engagement-panel-section-list-renderer {
 
 ytd-masthead[desktop-mic-background] #voice-search-button.ytd-masthead {
     background: transparent;
-    }  
+}
+    
+.ytp-chrome-controls .ytp-live-badge, .ytp-small-mode .ytp-chrome-controls .ytp-live-badge, .ytp-big-mode .ytp-chrome-controls .ytp-live-badge, .ytp-exp-bigger-button-like-mobile .ytp-chrome-controls .ytp-live-badge, .ytp-exp-bigger-button-like-mobile.ytp-small-mode .ytp-chrome-controls .ytp-live-badge, .ytp-exp-bigger-button-like-mobile.ytp-big-mode .ytp-chrome-controls .ytp-live-badge {
+    text-transform: lowercase;
+}
+
+.mention.yt-live-chat-text-message-renderer {
+    background: var(--accent);
+    color: var(--text-color);
+    border-radius: 10px;
+}
+
+ytd-sentiment-bar-renderer[activated][system-icons] #like-bar.ytd-sentiment-bar-renderer {
+    background: var(--accent);
+}
+
+yt-icon.ytd-pinned-comment-badge-renderer {
+    fill: var(--text-color);
+    margin-bottom: -3px;
+}
+
+#voice-search-button.ytd-masthead {
+    background: var(--bg)
+}
 }
