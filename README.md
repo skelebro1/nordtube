@@ -4,7 +4,7 @@
 
 
 ## ❗ Prerequisites
-[Stylus](https://github.com/openstyles/stylus)
+[Stylus browser extension](https://github.com/openstyles/stylus#releases)
 
 ## 💻 Installation
 
