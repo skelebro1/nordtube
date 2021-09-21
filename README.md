@@ -8,7 +8,7 @@
 
 ## 💻 Installation
 
-For now dark mode is **required** for the theme to work.
+Dark mode is **required** for the theme to work.
 
 [Click here to install nordtube](https://github.com/sheeepdev/nordtube/raw/main/nordtube.user.css)
 
