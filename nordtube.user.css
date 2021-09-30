@@ -1159,4 +1159,36 @@ yt-icon.ytd-pinned-comment-badge-renderer {
 #voice-search-button.ytd-masthead {
     background: var(--bg)
 }
+    
+ytd-searchbox[desktop-search-bar-big-tap-target] #search-icon-legacy.ytd-searchbox {
+    background: var(--bg);
+    border: none;
 }
+
+ytd-two-column-browse-results-renderer[page-subtype="history"] #secondary.ytd-two-column-browse-results-renderer {
+    background: var(--bg)
+}
+
+ytd-compact-link-renderer[compact-link-style="compact-link-style-type-history-my-activity-link"] #content-icon.ytd-compact-link-renderer[hidden] + #primary-text-container.ytd-compact-link-renderer > #label.ytd-compact-link-renderer {
+    color: var(--text-color)
+}
+
+#title.ytd-sub-feed-selector-renderer, ytd-sub-feed-option-renderer.ytd-sub-feed-selector-renderer {
+    border: none;
+}
+
+ytd-profile-column-stats-entry-renderer, #stats.ytd-playlist-sidebar-primary-info-renderer {
+    color: var(--text-color);
+}
+
+#items.ytd-profile-column-stats-renderer > .ytd-profile-column-stats-renderer, #items.ytd-profile-column-stats-renderer > .ytd-profile-column-stats-renderer:first-child {
+    border: none;
+}
+
+ytd-playlist-sidebar-renderer[responsive], .style-scope.ytd-section-list-renderer {
+    background: var(--bg)
+}
+
+#items.ytd-playlist-sidebar-renderer > .ytd-playlist-sidebar-renderer:not(:last-child) {
+    border: none;
+}    
