@@ -22,9 +22,9 @@ Dark mode is **required** for the theme to work.
 
 ⚙️ Recommended settings for Custom Progress Bar
 
-![Settings for Custom Progress Bar](./img/settings.png)
+Custom Color: ```#5e81ac```
 
-* Custom Color: ```#5e81ac```
+![Settings for Custom Progress Bar](./img/settings.png)
 
 
 ## 👤 Author
