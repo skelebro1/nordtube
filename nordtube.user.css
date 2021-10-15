@@ -452,10 +452,6 @@ paper-button.yt-next-continuation {
     color: var(--accent)
 }
 
-* {
-    text-transform: lowercase;
-}
-
 ytd-mini-guide-entry-renderer {
     background: var(--bg)
 }
@@ -1191,4 +1187,13 @@ ytd-playlist-sidebar-renderer[responsive], .style-scope.ytd-section-list-rendere
 
 #items.ytd-playlist-sidebar-renderer > .ytd-playlist-sidebar-renderer:not(:last-child) {
     border: none;
-}    
+}
+#contents.yt-live-chat-mode-change-message-renderer {
+    background: var(--bg-light);
+    border-radius: 20px;
+}
+
+ytd-button-renderer yt-formatted-string.ytd-button-renderer, tp-yt-paper-button.ytd-subscribe-button-renderer[subscribed] yt-formatted-string.ytd-subscribe-button-renderer, tp-yt-paper-button.ytd-subscribe-button-renderer {
+    text-transform: lowercase;
+    }
+}
