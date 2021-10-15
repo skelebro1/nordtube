@@ -24,6 +24,8 @@ Dark mode is **required** for the theme to work.
 
 ![Settings for Custom Progress Bar](./img/settings.png)
 
+* Custom Color: ```#5e81ac```
+
 
 ## 👤 Author
 
