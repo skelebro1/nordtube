@@ -141,7 +141,7 @@ ytd-button-renderer.style-suggestive[is-paper-button] paper-button.ytd-button-re
 }
 
 a.ytd-rich-metadata-renderer {
-    background-color: var(--bg)
+    background-color: var(--bg-lighter)
 }
 
 ytd-thumbnail.ytd-rich-grid-media, ytd-thumbnail.ytd-rich-grid-media::before {
@@ -195,6 +195,18 @@ ytd-watch-flexy[flexy][is-two-columns_] #columns.ytd-watch-flexy {
 
 ytd-watch-flexy[flexy][flexy-large-window_]:not([is-extra-wide-video_]), ytd-watch-flexy[flexy][flexy-large-window_][transcript-opened_][is-two-columns_]:not([is-extra-wide-video_]), ytd-watch-flexy[flexy][flexy-large-window_][playlist][is-two-columns_]:not([is-extra-wide-video_]), ytd-watch-flexy[flexy][flexy-large-window_][should-stamp-chat][is-two-columns_]:not([is-extra-wide-video_]) {
     background-color: var(--bg)
+}
+    
+.yt-simple-endpoint:hover {
+  background: var(--bg-lightest);
+}
+    
+ytd-watch-metadata[clickable-description][description-collapsed]:not([skinny-mode]) #description.ytd-watch-metadata {
+  background: var(--bg-lighter)
+}
+    
+ytd-watch-metadata[clickable-description][description-collapsed]:not([skinny-mode]) #description.ytd-watch-metadata:hover {
+  background: var(--bg-lightest)
 }
 
 .ytp-videowall-still-image {
