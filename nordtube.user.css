@@ -244,11 +244,19 @@ ytd-simple-menu-header-renderer[darker-dark-theme] {
 }
     
 ytd-multi-page-menu-renderer[scrollbar-rework] .menu-container.ytd-multi-page-menu-renderer {
-  scrollbar-color: var(--bg-lightest) var(--bg-light);
+  scrollbar-color: var(--bg-light) var(--bg-light);
 }
     
 ytd-multi-page-menu-renderer[scrollbar-rework] .menu-container.ytd-multi-page-menu-renderer:hover {
   scrollbar-color: var(--bg-lightest) var(--bg-light);
+}
+    
+#guide-inner-content.ytd-app {
+  scrollbar-color: var(--bg) var(--bg);
+}
+    
+#guide-inner-content.ytd-app:hover {
+  scrollbar-color: var(--bg-lightest) var(--bg);
 }
     
 #text.ytd-channel-name, #metadata-line.ytd-video-meta-block span.ytd-video-meta-block {
@@ -312,10 +320,13 @@ ytd-button-renderer.style-primary[is-paper-button] {
     background-color: var(--bg);
     border-bottom: none;
 }
-
+  
 #sections.ytd-guide-renderer > .ytd-guide-renderer:not(:last-child) {
-    background-color: var(--bg);
-    border-bottom: none;
+  border-bottom: 1px solid var(--bg-lighter);
+}
+    
+ytd-app[darker-dark-theme] #guide-content.ytd-app {
+  background: var(--bg);
 }
 
 ytd-app:not([background-color-update_]) tp-yt-app-drawer.ytd-app:not([persistent]).ytd-app #header.ytd-app {
@@ -756,12 +767,8 @@ ytd-button-renderer[disabled][is-paper-button] a.ytd-button-renderer {
     border-radius: 20px;
 }
 
-#guide-section-title.ytd-guide-section-renderer {
-    text-transform: lowercase;
-}
-
 ytd-guide-collapsible-section-entry-renderer.ytd-guide-section-renderer:not(:first-child) {
-    border: none;
+    border-top: 1px solid var(--bg-lighter);
 }
 
 .iv-branding .branding-context-container-outer, .iv-branding .branding-context-container-inner {
