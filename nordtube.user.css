@@ -54,10 +54,6 @@ ytd-subscription-notification-toggle-button-renderer #button.ytd-subscription-no
     color: var(--text-color)
 }
 
-.sbsb_a, .sbdd_b {
-    display: none;
-}
-
 #container.ytd-searchbox {
     background-color: var(--bg);
     color: var(--text-color);
@@ -353,11 +349,19 @@ ytd-app:not([background-color-update_]) tp-yt-app-drawer.ytd-app:not([persistent
 }
 
 #channel-header.ytd-c4-tabbed-header-renderer {
-    background-color: var(--bg-light)
+    background-color: var(--bg)
 }
 
 #header.ytd-browse, #tabs-inner-container.ytd-c4-tabbed-header-renderer {
-    background-color: var(--bg-light)
+    background-color: var(--bg)
+}
+    
+ytd-browse[darker-dark-theme][page-subtype="channels"], ytd-browse[darker-dark-theme][page-subtype="channels"][background-refresh], ytd-browse[darker-dark-theme][page-subtype="trending"][has-c4-tabbed-header-renderer], ytd-browse[darker-dark-theme][page-subtype="trending"][has-c4-tabbed-header-renderer][background-refresh] {
+  background: var(--bg);
+}
+    
+ytd-feed-filter-chip-bar-renderer[component-style="FEED_FILTER_CHIP_BAR_STYLE_TYPE_HASHTAG_LANDING_PAGE"][not-sticky] #chips-wrapper.ytd-feed-filter-chip-bar-renderer, ytd-feed-filter-chip-bar-renderer[component-style="FEED_FILTER_CHIP_BAR_STYLE_TYPE_CHANNEL_PAGE_GRID"][not-sticky] #chips-wrapper.ytd-feed-filter-chip-bar-renderer {
+  background: var(--bg);
 }
 
 ytd-page-manager > .ytd-page-manager {
@@ -472,6 +476,10 @@ paper-button.yt-next-continuation {
 ytd-mini-guide-entry-renderer {
     background: var(--bg)
 }
+    
+ytd-mini-guide-entry-renderer[darker-dark-theme] {
+  background: var(--bg);
+}
 
 
 .guide-icon.ytd-mini-guide-entry-renderer, .title.ytd-mini-guide-entry-renderer {
@@ -481,6 +489,16 @@ ytd-mini-guide-entry-renderer {
 ytd-searchbox[has-focus] #container.ytd-searchbox {
     border: 1px solid var(--accent);
     box-shadow: none;
+}
+    
+#search-form.ytd-searchbox {
+  height: 40px;
+  position: relative;
+  flex: 1;
+  flex-basis: 0%;
+  flex-basis: 0.000000001px;
+  display: flex;
+  flex-direction: row;
 }
 
 yt-live-chat-text-message-renderer[author-is-owner] {
