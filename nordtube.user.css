@@ -159,6 +159,10 @@ yt-icon.ytd-badge-supported-renderer {
 ytd-menu-popup-renderer {
     border-radius: 20px;
 }
+    
+ytd-menu-popup-renderer[sheets-refresh] tp-yt-paper-listbox.ytd-menu-popup-renderer {
+  background: var(--bg-lighter);
+}
 
 tp-yt-paper-listbox {
     background-color: var(--bg);
