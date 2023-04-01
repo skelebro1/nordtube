@@ -696,7 +696,7 @@ yt-formatted-string[has-link-only_]:not([force-default-style]) a.yt-simple-endpo
 }
     
 .header.ytd-playlist-panel-renderer {
-  background-color: var(--bg-lighter);
+  background-color: var(--bg-light);
 }
 
 #container.ytd-playlist-panel-renderer {
