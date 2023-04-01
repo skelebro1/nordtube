@@ -896,6 +896,34 @@ yt-confirm-dialog-renderer[dialog][dialog][dialog], tp-yt-paper-dialog {
 #scroller.yt-confirm-dialog-renderer {
     color: var(--text-color);
 }
+    
+#scroll-container.ytd-feed-filter-chip-bar-renderer {
+  background: var(--bg);
+}
+    
+ytd-feed-filter-chip-bar-renderer[darker-dark-theme][is-dark-theme] #right-arrow.ytd-feed-filter-chip-bar-renderer::before {
+  background: linear-gradient(to left,var(--bg) 20%,rgba(33,33,33,0) 80%);
+}
+  
+ytd-feed-filter-chip-bar-renderer[darker-dark-theme][is-dark-theme] #left-arrow.ytd-feed-filter-chip-bar-renderer::after {
+  background: linear-gradient(to right,var(--bg) 20%,rgba(33,33,33,0) 80%);
+}
+    
+ytd-feed-filter-chip-bar-renderer[darker-dark-theme] #left-arrow-button.ytd-feed-filter-chip-bar-renderer, ytd-feed-filter-chip-bar-renderer[darker-dark-theme] #right-arrow-button.ytd-feed-filter-chip-bar-renderer {
+  background-color: var(--bg);
+}
+    
+ytd-video-description-header-renderer {
+  background: var(--bg);
+}
+    
+ytd-expandable-video-description-body-renderer.ytd-structured-description-content-renderer {
+  background: var(--bg);
+}
+    
+ytd-section-list-renderer[engagement-panel]:not([engagement-panel-dropdown]):not([watch-while-engagement-panel]) #contents.ytd-section-list-renderer {
+  background: var(--bg);
+}
 
 .unfocused-line.tp-yt-paper-input-container {
     border-color: var(--bg-lightest)
