@@ -4,7 +4,6 @@
 @namespace    https://github.com/sheeepdev/nordtube
 @homepageURL  https://github.com/sheeepdev/nordtube
 @supportURL   https://github.com/sheeepdev/nordtube/issues
-@updateURL    https://github.com/sheeepdev/nordtube/raw/main/nordtube.user.css
 @author       sheep <me@sheepdev.xyz> (https://github.com/sheeepdev)
 @version      2.1.0
 @license      CC-BY-4.0
@@ -62,20 +61,31 @@ ytd-subscription-notification-toggle-button-renderer #button.ytd-subscription-no
 #container.ytd-searchbox {
     background-color: var(--bg);
     color: var(--text-color);
-    border: none;
+    border: 1px solid var(--bg-lighter);
 }
 
 #search-icon-legacy.ytd-searchbox {
-    background-color: var(--bg)
+    background-color: var(--bg-lighter);
+    color: var(--text-color);
+    border: 1px solid var(--bg-lighter);
 }
+
+#search-icon-legacy.ytd-searchbox:hover {
+    background-color: var(--bg-lighter);
+    color: var(--text-color);
+    border: 1px solid var(--bg-lighter);
+}
+
+#search-icon-legacy.ytd-searchbox:not(:hover) {
+    background-color: var(--bg-lighter);
+    color: var(--text-color);
+    border: 1px solid var(--bg-lighter);
+}
+
+
 
 #logo-icon > svg > g > g:nth-child(1) > path:nth-child(1) {
     fill: var(--accent);
-}
-
-#search-icon-legacy.ytd-searchbox {
-    color: var(--text-color);
-    border: none;
 }
 
 #search-icon-legacy.ytd-searchbox yt-icon.ytd-searchbox {
@@ -138,14 +148,6 @@ a.ytd-rich-metadata-renderer {
     background-color: var(--bg)
 }
 
-#chips.yt-chip-cloud-renderer {
-    display: none;
-}
-
-ytd-thumbnail #thumbnail.ytd-thumbnail {
-    border-radius: 20px;
-}
-
 ytd-thumbnail.ytd-rich-grid-media, ytd-thumbnail.ytd-rich-grid-media::before {
     border-radius: 20px;
 }
@@ -170,16 +172,12 @@ yt-icon.ytd-menu-service-item-renderer {
     color: var(--text-color)
 }
 
-#chips.ytd-feed-filter-chip-bar-renderer, ytd-feed-filter-chip-bar-renderer {
-    display: none;
-}
-
 ytd-rich-grid-renderer {
     background-color: var(--bg)
 }
 
 .html5-video-player.ytp-autonav-endscreen-cancelled-state {
-    border-radius: 20px;
+    border-radius: 12px;
 }
 
 #content.ytd-rich-section-renderer > .ytd-rich-section-renderer {
@@ -243,11 +241,20 @@ a.yt-simple-endpoint.yt-formatted-string {
 a.yt-simple-endpoint.yt-formatted-string:hover {
     color: var(--accent-light)
 }
-
-ytd-simple-menu-header-renderer {
-    background-color: var(--bg)
+    
+ytd-simple-menu-header-renderer[darker-dark-theme] {
+    background-color: var(--bg-light);
+    border-bottom-color: var(--bg-lightest)
 }
-
+    
+ytd-multi-page-menu-renderer[scrollbar-rework] .menu-container.ytd-multi-page-menu-renderer {
+  scrollbar-color: var(--bg-lightest) var(--bg-light);
+}
+    
+ytd-multi-page-menu-renderer[scrollbar-rework] .menu-container.ytd-multi-page-menu-renderer:hover {
+  scrollbar-color: var(--bg-lightest) var(--bg-light);
+}
+    
 #text.ytd-channel-name, #metadata-line.ytd-video-meta-block span.ytd-video-meta-block {
     color: var(--text-color)
 }
@@ -341,10 +348,6 @@ ytd-app:not([background-color-update_]) tp-yt-app-drawer.ytd-app:not([persistent
     border-radius: 20px;
 }
 
-ytd-simple-menu-header-renderer {
-    border: none;
-}
-
 #vote-count-middle.ytd-comment-action-buttons-renderer {
     color: var(--text-color)
 }
@@ -428,6 +431,20 @@ yt-live-chat-viewer-engagement-message-renderer, #card.yt-live-chat-viewer-engag
     display: none;
 }
 
+yt-chip-cloud-renderer[darker-dark-theme][is-dark-theme] #right-arrow.yt-chip-cloud-renderer::before {
+  background: linear-gradient(to left,var(--bg,var(--bg)) 10%,rgba(24,24,24,0) 90%);
+}
+
+yt-chip-cloud-renderer[darker-dark-theme][is-dark-theme] #left-arrow.yt-chip-cloud-renderer::after {
+
+    background: linear-gradient(to right,var(--bg,var(--bg)) 10%,rgba(24,24,24,0) 90%);
+
+}
+
+yt-chip-cloud-renderer[darker-dark-theme] #left-arrow-button.yt-chip-cloud-renderer, yt-chip-cloud-renderer[darker-dark-theme] #right-arrow-button.yt-chip-cloud-renderer {
+  background: var(--bg,var(--bg));
+}
+
 #author-name.yt-live-chat-author-chip {
     color: var(--text-color)
 }
@@ -462,7 +479,7 @@ ytd-mini-guide-entry-renderer {
 }
 
 ytd-searchbox[has-focus] #container.ytd-searchbox {
-    border: none;
+    border: 1px solid var(--accent);
     box-shadow: none;
 }
 
@@ -540,10 +557,6 @@ tp-yt-paper-listbox.yt-dropdown-menu {
     color: var(--accent-lighter);
 }
 
-ytd-topbar-menu-button-renderer #button.ytd-topbar-menu-button-renderer {
-    display: none !important;
-}
-
 yt-live-chat-message-input-renderer {
     background: var(--bg);
     color: var(--text-color);
@@ -578,7 +591,7 @@ ytd-sentiment-bar-renderer[activated] #like-bar.ytd-sentiment-bar-renderer {
 }
 
 #sections.ytd-multi-page-menu-renderer > .ytd-multi-page-menu-renderer:not(:last-child), ytd-multi-page-menu-renderer[menu-style="multi-page-menu-style-type-notifications"] #sections.ytd-multi-page-menu-renderer > .ytd-multi-page-menu-renderer {
-    background-color: var(--bg);
+    background-color: var(--bg-light);
     border: none;
 }
 
@@ -588,10 +601,6 @@ ytd-sentiment-bar-renderer[activated] #like-bar.ytd-sentiment-bar-renderer {
 
 ::placeholder {
     color: var(--white) !important;
-    opacity: 1 !important;
-}
-
-#search-icon-legacy.ytd-searchbox yt-icon.ytd-searchbox {
     opacity: 1 !important;
 }
 
@@ -628,7 +637,14 @@ yt-formatted-string[has-link-only_]:not([force-default-style]) a.yt-simple-endpo
     border: none;
     background-color: var(--bg)
 }
+    
+.header.ytd-playlist-panel-renderer {
+  background-color: var(--bg-lighter);
+}
 
+#container.ytd-playlist-panel-renderer {
+  border: 1px solid var(--bg-lightest);
+}
 ytd-thumbnail-overlay-resume-playback-renderer {
     background-color: var(--bg-lightest)
 }
@@ -1133,6 +1149,10 @@ ytd-masthead[desktop-mic-background] #voice-search-button.ytd-masthead {
     background: transparent;
 }
     
+ytd-voice-search-dialog-renderer[dialog] {
+    background-color: var(--bg)
+}
+    
 .ytp-chrome-controls .ytp-live-badge, .ytp-small-mode .ytp-chrome-controls .ytp-live-badge, .ytp-big-mode .ytp-chrome-controls .ytp-live-badge, .ytp-exp-bigger-button-like-mobile .ytp-chrome-controls .ytp-live-badge, .ytp-exp-bigger-button-like-mobile.ytp-small-mode .ytp-chrome-controls .ytp-live-badge, .ytp-exp-bigger-button-like-mobile.ytp-big-mode .ytp-chrome-controls .ytp-live-badge {
     text-transform: lowercase;
 }
@@ -1153,47 +1173,6 @@ yt-icon.ytd-pinned-comment-badge-renderer {
 }
 
 #voice-search-button.ytd-masthead {
-    background: var(--bg)
+    background: var(--bg-light)
 }
-    
-ytd-searchbox[desktop-search-bar-big-tap-target] #search-icon-legacy.ytd-searchbox {
-    background: var(--bg);
-    border: none;
-}
-
-ytd-two-column-browse-results-renderer[page-subtype="history"] #secondary.ytd-two-column-browse-results-renderer {
-    background: var(--bg)
-}
-
-ytd-compact-link-renderer[compact-link-style="compact-link-style-type-history-my-activity-link"] #content-icon.ytd-compact-link-renderer[hidden] + #primary-text-container.ytd-compact-link-renderer > #label.ytd-compact-link-renderer {
-    color: var(--text-color)
-}
-
-#title.ytd-sub-feed-selector-renderer, ytd-sub-feed-option-renderer.ytd-sub-feed-selector-renderer {
-    border: none;
-}
-
-ytd-profile-column-stats-entry-renderer, #stats.ytd-playlist-sidebar-primary-info-renderer {
-    color: var(--text-color);
-}
-
-#items.ytd-profile-column-stats-renderer > .ytd-profile-column-stats-renderer, #items.ytd-profile-column-stats-renderer > .ytd-profile-column-stats-renderer:first-child {
-    border: none;
-}
-
-ytd-playlist-sidebar-renderer[responsive], .style-scope.ytd-section-list-renderer {
-    background: var(--bg)
-}
-
-#items.ytd-playlist-sidebar-renderer > .ytd-playlist-sidebar-renderer:not(:last-child) {
-    border: none;
-}
-#contents.yt-live-chat-mode-change-message-renderer {
-    background: var(--bg-light);
-    border-radius: 20px;
-}
-
-ytd-button-renderer yt-formatted-string.ytd-button-renderer, tp-yt-paper-button.ytd-subscribe-button-renderer[subscribed] yt-formatted-string.ytd-subscribe-button-renderer, tp-yt-paper-button.ytd-subscribe-button-renderer {
-    text-transform: lowercase;
-    }
 }
