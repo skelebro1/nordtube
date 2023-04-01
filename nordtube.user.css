@@ -278,6 +278,14 @@ ytd-multi-page-menu-renderer[scrollbar-rework] .menu-container.ytd-multi-page-me
 .badge-style-type-simple.ytd-badge-supported-renderer {
     border-radius: 20px;
 }
+    
+.badge-style-type-medium-grey.ytd-badge-supported-renderer {
+  background: var(--bg-lightest);
+}
+    
+.badge-style-type-medium-grey.ytd-badge-supported-renderer span.ytd-badge-supported-renderer {
+  color: var(--text-color);
+}
 
 #country-code.ytd-topbar-logo-renderer {
     display: none;
