@@ -371,6 +371,10 @@ ytd-browse[darker-dark-theme][page-subtype="channels"], ytd-browse[darker-dark-t
   background: var(--bg);
 }
     
+ytd-browse[darker-dark-theme][page-subtype="playlist"], ytd-browse[darker-dark-theme][page-subtype="show"], ytd-browse[darker-dark-theme][page-subtype="playlist"] ytd-two-column-browse-results-renderer.ytd-browse, ytd-browse[darker-dark-theme][page-subtype="show"] ytd-two-column-browse-results-renderer.ytd-browse, ytd-browse[darker-dark-theme][page-subtype="playlist"][background-refresh], ytd-browse[darker-dark-theme][page-subtype="show"][background-refresh] {
+  background: var(--bg);
+}
+    
 ytd-feed-filter-chip-bar-renderer[component-style="FEED_FILTER_CHIP_BAR_STYLE_TYPE_HASHTAG_LANDING_PAGE"][not-sticky] #chips-wrapper.ytd-feed-filter-chip-bar-renderer, ytd-feed-filter-chip-bar-renderer[component-style="FEED_FILTER_CHIP_BAR_STYLE_TYPE_CHANNEL_PAGE_GRID"][not-sticky] #chips-wrapper.ytd-feed-filter-chip-bar-renderer {
   background: var(--bg);
 }
