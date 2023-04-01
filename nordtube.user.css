@@ -1256,4 +1256,12 @@ yt-icon.ytd-pinned-comment-badge-renderer {
 #voice-search-button.ytd-masthead {
     background: var(--bg-light)
 }
+    
+#container.ytd-playlist-panel-video-renderer {
+  background: transparent;
+}
+    
+#container.ytd-playlist-panel-video-renderer:hover {
+  background: var(--bg-lighter);
+}
 }
