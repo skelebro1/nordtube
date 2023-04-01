@@ -296,7 +296,7 @@ ytd-author-comment-badge-renderer[creator] {
 }
 
 #placeholder-area.ytd-comment-simplebox-renderer, #input-container.ytd-commentbox {
-    border: none;
+    border-bottom: 1px solid var(--bg-lightest) 
 }
 
 ytd-commentbox {
