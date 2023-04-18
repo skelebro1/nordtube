@@ -77,6 +77,10 @@ ytd-subscription-notification-toggle-button-renderer #button.ytd-subscription-no
     color: var(--text-color);
     border: 1px solid var(--bg-lighter);
 }
+    
+ytd-guide-renderer[guide-refresh] #sections.ytd-guide-renderer > ytd-guide-section-renderer.ytd-guide-renderer:not(:first-child), ytd-guide-renderer[guide-refresh] #sections.ytd-guide-renderer > ytd-guide-subscriptions-section-renderer.ytd-guide-renderer {
+    border-bottom: 1px solid var(--bg-lighter)
+}
 
 yt-chip-cloud-chip-renderer[chip-style="STYLE_DEFAULT"], yt-chip-cloud-chip-renderer[chip-style="STYLE_HOME_FILTER"], yt-chip-cloud-chip-renderer[chip-style="STYLE_REFRESH_TO_NOVEL_CHIP"] {
     background: var(--bg-lighter);
@@ -1095,7 +1099,7 @@ ytd-thumbnail-overlay-toggle-button-renderer {
 }
 
 #copyright > div:before {
-    content: '🎨 nordtube by sheep' !important;
+    content: '🎨 nordtube by sheep (fork by skelebro1)' !important;
     visibility: visible;
 }
 
