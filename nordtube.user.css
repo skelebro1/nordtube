@@ -61,7 +61,7 @@ ytd-subscription-notification-toggle-button-renderer #button.ytd-subscription-no
 }
 
 #search-icon-legacy.ytd-searchbox {
-    background-color: var(--bg-lighter);
+    background-color: var(--bg-light);
     color: var(--text-color);
     border: 1px solid var(--bg-lighter);
 }
@@ -73,12 +73,22 @@ ytd-subscription-notification-toggle-button-renderer #button.ytd-subscription-no
 }
 
 #search-icon-legacy.ytd-searchbox:not(:hover) {
-    background-color: var(--bg-lighter);
+    background-color: var(--bg-light);
     color: var(--text-color);
     border: 1px solid var(--bg-lighter);
 }
 
+yt-chip-cloud-chip-renderer[chip-style="STYLE_DEFAULT"], yt-chip-cloud-chip-renderer[chip-style="STYLE_HOME_FILTER"], yt-chip-cloud-chip-renderer[chip-style="STYLE_REFRESH_TO_NOVEL_CHIP"] {
+    background: var(--bg-lighter);
+}
+    
+yt-chip-cloud-chip-renderer[chip-style="STYLE_DEFAULT"]:not([selected]):hover, yt-chip-cloud-chip-renderer[chip-style="STYLE_HOME_FILTER"]:not([selected]):hover, yt-chip-cloud-chip-renderer[chip-style="STYLE_REFRESH_TO_NOVEL_CHIP"]:not([selected]):hover, yt-chip-cloud-chip-renderer[chip-style="STYLE_DEFAULT"]:not([selected]):focus, yt-chip-cloud-chip-renderer[chip-style="STYLE_HOME_FILTER"]:not([selected]):focus, yt-chip-cloud-chip-renderer[chip-style="STYLE_REFRESH_TO_NOVEL_CHIP"]:not([selected]):focus {
+    background-color: var(--bg-lightest);
+}
 
+#buttons.ytd-masthead > .ytd-masthead:hover {
+    background: var(--bg-lighter);
+}
 
 #logo-icon > svg > g > g:nth-child(1) > path:nth-child(1) {
     fill: var(--accent);
@@ -825,6 +835,14 @@ ytd-guide-collapsible-section-entry-renderer.ytd-guide-section-renderer:not(:fir
     background-color: var(--bg-lightest);
     color: var(--text-color);
     border-radius: 15px;
+}
+    
+.yt-spec-button-shape-next--mono.yt-spec-button-shape-next--tonal {
+    background-color: var(--bg-light);
+}
+    
+.yt-spec-button-shape-next--mono.yt-spec-button-shape-next--tonal:hover {
+    background-color: var(--bg-lighter);
 }
 
 ytd-thumbnail-overlay-time-status-renderer {
