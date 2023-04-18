@@ -390,6 +390,7 @@ ytd-app:not([background-color-update_]) tp-yt-app-drawer.ytd-app:not([persistent
 
 #guide-links-primary.ytd-guide-renderer, #guide-links-secondary.ytd-guide-renderer, #footer.ytd-guide-renderer > #copyright {
     background-color: var(--bg)
+    border-top: 0
 }
 
 #footer.ytd-guide-renderer > #copyright, #guide-links-primary.ytd-guide-renderer > a, #guide-links-secondary.ytd-guide-renderer > a, .metadata.ytd-notification-renderer {
