@@ -1295,4 +1295,8 @@ yt-icon.ytd-pinned-comment-badge-renderer {
 #container.ytd-playlist-panel-video-renderer:hover {
   background: var(--bg-lighter);
 }
+    
+ytd-merch-shelf-renderer[darker-dark-theme] {
+  background-color: var(--bg);
+}
 }
