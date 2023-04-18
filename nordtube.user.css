@@ -198,15 +198,27 @@ ytd-watch-flexy[flexy][flexy-large-window_]:not([is-extra-wide-video_]), ytd-wat
 }
     
 .yt-simple-endpoint:hover {
-  background: var(--bg-lightest);
+    background: transparent
 }
     
 ytd-watch-metadata[clickable-description][description-collapsed]:not([skinny-mode]) #description.ytd-watch-metadata {
-  background: var(--bg-lighter)
+    background: var(--bg-light)
 }
     
 ytd-watch-metadata[clickable-description][description-collapsed]:not([skinny-mode]) #description.ytd-watch-metadata:hover {
-  background: var(--bg-lightest)
+    background: var(--bg-lighter)
+}
+    
+ytd-watch-metadata[clickable-description] #description.ytd-watch-metadata {
+    background: var(--bg-light);
+}
+    
+.yt-spec-button-shape-next--size-m.yt-spec-button-shape-next--icon-leading.yt-spec-button-shape-next--align-by-text {
+    color: var(--accent-lighter);
+}
+    
+.yt-spec-button-shape-next--size-m.yt-spec-button-shape-next--icon-leading.yt-spec-button-shape-next--align-by-text:hover {
+    background: var(--bg-light);
 }
 
 .ytp-videowall-still-image {
@@ -327,10 +339,6 @@ ytd-author-comment-badge-renderer[creator] {
     display: none;
 }
 
-#placeholder-area.ytd-comment-simplebox-renderer, #input-container.ytd-commentbox {
-    border-bottom: 1px solid var(--bg-lightest) 
-}
-
 ytd-commentbox {
     border: none;
 }
@@ -413,6 +421,10 @@ ytd-page-manager > .ytd-page-manager {
 
 ytd-playlist-thumbnail #thumbnail.ytd-playlist-thumbnail {
     border-radius: 20px;
+}
+    
+#thumbnail-input-row.ytd-commentbox {
+  padding-top: 6px;
 }
 
 #metadata.ytd-channel-renderer, #description.ytd-channel-renderer, #subscriber-count.ytd-c4-tabbed-header-renderer {
@@ -1101,10 +1113,6 @@ tp-yt-paper-toggle-button[checked]:not([disabled]) .toggle-button.tp-yt-paper-to
 
 ytd-section-list-renderer:not([hide-bottom-separator]):not([page-subtype="history"]):not([page-subtype="memberships-and-purchases"]):not([page-subtype="ypc-offers"]) #contents.ytd-section-list-renderer > .ytd-section-list-renderer:not(:last-child):not(ytd-page-introduction-renderer):not([item-dismissed]).ytd-section-list-renderer:not([has-destination-shelf-renderer]).ytd-section-list-renderer {
     border: none;
-}
-
-.html5-video-player:not(.ytp-transparent), .html5-video-player.unstarted-mode, .html5-video-player.ad-showing, .html5-video-player.ended-mode, .html5-video-player.ytp-fullscreen {
-    border-radius: 20px; 
 }
 
 #author-name.member.yt-live-chat-author-chip {
