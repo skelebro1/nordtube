@@ -134,10 +134,6 @@ ytd-button-renderer.style-text[is-icon-button] #text.ytd-button-renderer, ytd-bu
     background-color: var(--bg)
 }
 
-#contentWrapper.tp-yt-iron-dropdown > * {
-    background-color: var(--bg)
-}
-
 ytd-active-account-header-renderer {
     background-color: var(--bg)
 }
@@ -155,7 +151,11 @@ ytd-button-renderer.style-suggestive[is-paper-button] paper-button.ytd-button-re
 }
 
 a.ytd-rich-metadata-renderer {
-    background-color: var(--bg-lighter)
+    background-color: var(--bg-light)
+}
+    
+ytd-rich-metadata-row-renderer:not([fixie]) #contents.ytd-rich-metadata-row-renderer .ytd-rich-metadata-row-renderer {
+    background: var(--bg-lighter);
 }
 
 ytd-thumbnail.ytd-rich-grid-media, ytd-thumbnail.ytd-rich-grid-media::before {
@@ -398,8 +398,8 @@ ytd-app:not([background-color-update_]) tp-yt-app-drawer.ytd-app:not([persistent
 }
 
 #contentWrapper.tp-yt-iron-dropdown > * {
-    border: none;
-    border-radius: 20px;
+    border: 1px solid var(--bg-lighter);
+    background-color: var(--bg);
 }
 
 #vote-count-middle.ytd-comment-action-buttons-renderer {
